@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+	<title>NBA Stats</title>
+</head>
+<body>
+  <div class="search">
+    <form action="{{ url_for('chart') }}" method="post">
+      <p> First Name: <input type="text" placeholder="Search.." name="Name"></p>
+      <p> Season: <input type="text" placeholder="Search.." name="Season"></p>
+      <p> Stat: <input type="text" placeholder="Search.." name="Stat"></p>
+      <button type="submit">Submit</button>
+    </form>
+    <p> List of Stats: 'GP', 'W', 'L', 'W_PCT', 'MIN', 'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'TOV', 'STL', 'BLK', 'BLKA', 'PF', 'PFD', 'PTS', 'PLUS_MINUS', 'DD2', 'TD3', 'FAN_DUEL_PTS'
+  </div>
+</body>
+</html>
